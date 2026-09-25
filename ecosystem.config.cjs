@@ -1,12 +1,12 @@
 module.exports = {
   apps: [
     {
-      name: 'leasing-whatsapp-bot',
-      script: './dist/index.js', // Cambiá a ./dist/bot.js si tu archivo de entrada se llama bot.ts
-      instances: 1,              // OBLIGATORIO 1: no usar cluster, Baileys solo permite una conexión activa
+      name: 'simulador-leasing-bot',
+      script: 'dist/index.js',
+      instances: 1,
       autorestart: true,
       watch: false,
-      max_memory_restart: '300M',
+      max_memory_restart: '500M',
       env: {
         NODE_ENV: 'production',
       },
